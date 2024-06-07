@@ -101,8 +101,8 @@ INSTALL() {
     rm -rf $HOME/fuse.zip
   fi
   # Download clouddrive2
-  mkdir -p $HOME/clouddrive
-  INSTALL_PATH=$HOME/clouddrive
+  mkdir -p $HOME/.clouddrive
+  INSTALL_PATH=$HOME/.clouddrive
   clouddrive_version=$(curl -s https://api.github.com/repos/cloud-fs/cloud-fs.github.io/releases/latest | grep -Eo "\s\"name\": \"clouddrive-2-android-$ARCH-.+?\.tgz\"" | awk -F'"' '{print $4}')
   echo -e "\r\n${GREEN_COLOR}下载 clouddrive2 $VERSION ...${RES}"
   curl -L ${mirror}https://github.com/cloud-fs/cloud-fs.github.io/releases/latest/download/$clouddrive_version -o $HOME/clouddrive.tgz $CURL_BAR
