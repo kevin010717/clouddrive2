@@ -158,9 +158,9 @@ get-local-ipv4-select() {
 
 DAEMON() {
   if [[ "$CHECK_ROOT" == "root" ]]; then
-    cd_start="sudo nsenter -t 1 -m -- /bin/bash -c \"cd /data/data/com.termux/files/home/clouddrive/ && sudo ./clouddrive\""
+    cd_start="sudo nsenter -t 1 -m -- /bin/bash -c \"cd /data/data/com.termux/files/home/.clouddrive/ && sudo ./clouddrive\""
   else
-    cd_start="cd /data/data/com.termux/files/home/clouddrive/ && ./clouddrive"
+    cd_start="cd /data/data/com.termux/files/home/.clouddrive/ && ./clouddrive"
   fi
   mkdir -p $PREFIX/var/service/clouddrive && touch $PREFIX/var/service/clouddrive/run
   cat >$PREFIX/var/service/clouddrive/run <<EOF 
