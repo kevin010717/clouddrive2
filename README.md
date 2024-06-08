@@ -65,7 +65,7 @@ curl -fsSL "https://raw.githubusercontent.com/anpplex/clouddrive2/main/cd2.sh" |
 - 以下命令2选1  
 ```shell
 # 国内加速(推荐)
-curl -fsSL "https://mirror.ghproxy.com/https://raw.githubusercontent.com/anpplex/clouddrive2/main/cd2-termux.sh" | bash -s install mirror
+curl -fsSL "https://mirror.ghproxy.com/https://github.com/kevin010717/clouddrive2/blob/main/cd2-termux.sh" | bash -s install root mirror
 # 代理
 curl -fsSL "https://raw.githubusercontent.com/anpplex/clouddrive2/main/cd2-termux.sh" | bash -s install
 ```
