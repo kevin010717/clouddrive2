@@ -199,7 +199,7 @@ if [ "$1" = "uninstall" ]; then
   UNINSTALL
 elif [ "$1" = "install" ]; then
     INSTALL
-    DAEMON
+#    DAEMON
     if [ -f "$INSTALL_PATH/clouddrive" ]; then
       SUCCESS
     else
